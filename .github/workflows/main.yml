@@ -1,0 +1,13 @@
+name: quarto-setup
+  on:
+    branch: main
+    push:
+    pull_request:
+
+jobs:
+  quarto-linux:
+    runs-on: ubuntu-latest
+      steps:
+        - uses: quarto-dev/quarto-actions/setup@v2
+        - run: |
+          quarto --version
