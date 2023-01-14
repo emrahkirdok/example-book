@@ -2,6 +2,8 @@ name: quarto-setup
 
 on: 
   branch: main
+  push:
+  pull_request:
 
 jobs:
   quarto-linux:
@@ -10,16 +12,3 @@ jobs:
       - uses: quarto-dev/quarto-actions/setup@v2
       - run: |
           quarto --version
-  quarto-windows:
-    runs-on: windows-latest
-    steps:
-      - uses: quarto-dev/quarto-actions/setup@v2
-      - run: |
-          quarto --version
-  quarto-macos:
-    runs-on: macos-latest
-    steps:
-      - uses: quarto-dev/quarto-actions/setup@v2
-      - run: |
-          quarto --version
-
