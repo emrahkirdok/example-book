@@ -2,4 +2,4 @@ name: quarto-import
 channels:
 - conda-forge
 dependencies:
-- r
+- r-base
