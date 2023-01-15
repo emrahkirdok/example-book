@@ -23,12 +23,17 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
           
           
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          path: source-folder
-          to: html
-          
+      #- name: Render Quarto Project
+      #  uses: quarto-dev/quarto-actions/render@v2
+      #  with:
+      #    path: source-folder
+      #    to: html
+     
+      - name: Render to html
+        # Add any command line argument needed
+        run: |
+          quarto render --to html
+
           
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
