@@ -26,7 +26,7 @@ jobs:
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with:
-          to: html # If set, it will be equivalent to `quarto render --to html`
+          to: "html"
           path: source-folder
           
       - name: Render and Publish
