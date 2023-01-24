@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": ".",
     "section": "",
-    "text": "Preface\nThis is a Quarto book. Bu ilk quarto otomatik kitap denemesi. Şimdi de yeninden derleyelim.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+    "text": "Preface\nThis is a Quarto book. Bu ilk quarto otomatik kitap denemesi. Şimdi de yeninden derleyelim.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\na <- 5\nb <- 10\n\nc <- a + b\n\ncat(\"sonuc: \", c)\n\nsonuc:  15"
   },
   {
     "objectID": "intro.html",
